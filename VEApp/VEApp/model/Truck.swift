@@ -6,7 +6,23 @@
 //
 
 struct Truck: Codable {
-    let truckId: Int
-    let truckName: String
-    let speedKmh: Int
+    let id: String
+    let registrationNumber: String
+    let status: String
+    let speed: Int
+    let fuelLevel: Int
+    let adBlueLevel: Int
+    let lastLocation: String
+    let lastUpdated: String
+    let distanceToService: String
+    let hoursToService: String
+    let tripFuelEfficiency: String
+    let engineTemperature: String
+    let outsideTemperature: String
+    let issues: [String]
+    let faults: [String]
+    let driverName: String
+    let driverId: String
+    let driverPhone: String
+    let licenseNumber: String
 }

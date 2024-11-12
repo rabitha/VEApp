@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXFileReference section */
@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		DBB404712CE1C485006E56B3 /* Exceptions for "VEApp" folder in "VEApp" target */ = {
+		DBB404712CE1C485006E56B3 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -21,14 +21,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		DBB404612CE1C483006E56B3 /* VEApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				DBB404712CE1C485006E56B3 /* Exceptions for "VEApp" folder in "VEApp" target */,
-			);
-			path = VEApp;
-			sourceTree = "<group>";
-		};
+		DBB404612CE1C483006E56B3 /* VEApp */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (DBB404712CE1C485006E56B3 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = VEApp; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +92,7 @@
 				};
 			};
 			buildConfigurationList = DBB4045A2CE1C483006E56B3 /* Build configuration list for PBXProject "VEApp" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -107,7 +101,6 @@
 			);
 			mainGroup = DBB404562CE1C483006E56B3;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = DBB404602CE1C483006E56B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

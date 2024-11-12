@@ -5,28 +5,39 @@
 //  Created by Rabitha N. on 12/11/24.
 //
 
+import UIKit
+import Foundation
+import UIKit
+
 class TruckSubDetailViewController: UIViewController {
+    var truck: Truck?
 
-    var truck: Truck
-
-    init(truck: Truck) {
-        self.truck = truck
-        super.init(nibName: nil, bundle: nil)
-    }
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    @IBOutlet weak var registrationLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
+    @IBOutlet weak var fuelLevelLabel: UILabel!
+    @IBOutlet weak var adBlueLevelLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var lastUpdatedLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
-        self.title = truck.truckName
-
-        let speedLabel = UILabel()
-        speedLabel.text = "Speed: \(truck.speedKmh) km/h"
-        speedLabel.textAlignment = .center
-        speedLabel.frame = CGRect(x: 20, y: 100, width: self.view.frame.width - 40, height: 50)
-        self.view.addSubview(speedLabel)
+        if let truck = truck {
+            registrationLabel.text = truck.registrationNumber
+            statusLabel.text = truck.status
+            speedLabel.text = "\(truck.speed) km/h"
+            fuelLevelLabel.text = "\(truck.fuelLevel)%"
+            adBlueLevelLabel.text = "\(truck.adBlueLevel)%"
+            locationLabel.text = truck.lastLocation
+            lastUpdatedLabel.text = "Last Updated: \(truck.lastUpdated)"
+        }
+    }
+    
+    @IBAction func showInDepthDetails(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let inDepthDetailVC = storyboard.instantiateViewController(withIdentifier: "TruckInDepthDetailViewController") as? TruckInDepthDetailViewController {
+            inDepthDetailVC.truck = truck
+            navigationController?.pushViewController(inDepthDetailVC, animated: true)
+        }
     }
 }
