@@ -1,0 +1,18 @@
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/TruckSubDetailViewController.swift":
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailViewController.swiftdeps"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailViewController.dia"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailViewController.swiftconstvalues"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailViewController.d"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailViewController.o"
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/TruckSubDetailsTableViewCell.swift":
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCell.dia"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCell.d"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCell.o"
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCell.swiftdeps"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCell.swiftconstvalues"
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/TruckListViewController.swift":
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckListViewController.o"
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckListViewController.swiftdeps"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckListViewController.swiftconstvalues"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckListViewController.d"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckListViewController.dia"

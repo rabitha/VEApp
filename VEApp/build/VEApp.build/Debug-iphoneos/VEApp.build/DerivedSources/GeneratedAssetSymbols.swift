@@ -24,6 +24,9 @@ private let resourceBundle = Foundation.Bundle(for: ResourceBundleClass.self)
 @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
 extension DeveloperToolsSupport.ColorResource {
 
+    /// The "BlackGrayColor" asset catalog color resource.
+    static let blackGray = DeveloperToolsSupport.ColorResource(name: "BlackGrayColor", bundle: resourceBundle)
+
     /// The "greenColor" asset catalog color resource.
     static let green = DeveloperToolsSupport.ColorResource(name: "greenColor", bundle: resourceBundle)
 
@@ -40,14 +43,23 @@ extension DeveloperToolsSupport.ColorResource {
 @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
 extension DeveloperToolsSupport.ImageResource {
 
+    /// The "drawer-menu-icon" asset catalog image resource.
+    static let drawerMenuIcon = DeveloperToolsSupport.ImageResource(name: "drawer-menu-icon", bundle: resourceBundle)
+
     /// The "halt" asset catalog image resource.
     static let halt = DeveloperToolsSupport.ImageResource(name: "halt", bundle: resourceBundle)
 
     /// The "idle" asset catalog image resource.
     static let idle = DeveloperToolsSupport.ImageResource(name: "idle", bundle: resourceBundle)
 
+    /// The "notification-icon" asset catalog image resource.
+    static let notificationIcon = DeveloperToolsSupport.ImageResource(name: "notification-icon", bundle: resourceBundle)
+
     /// The "running" asset catalog image resource.
     static let running = DeveloperToolsSupport.ImageResource(name: "running", bundle: resourceBundle)
+
+    /// The "search-icon" asset catalog image resource.
+    static let searchIcon = DeveloperToolsSupport.ImageResource(name: "search-icon", bundle: resourceBundle)
 
 }
 
@@ -57,6 +69,15 @@ extension DeveloperToolsSupport.ImageResource {
 @available(macOS 14.0, *)
 @available(macCatalyst, unavailable)
 extension AppKit.NSColor {
+
+    /// The "BlackGrayColor" asset catalog color.
+    static var blackGray: AppKit.NSColor {
+#if !targetEnvironment(macCatalyst)
+        .init(resource: .blackGray)
+#else
+        .init()
+#endif
+    }
 
     #warning("The \"greenColor\" color asset name resolves to a conflicting NSColor symbol \"green\". Try renaming the asset.")
 
@@ -72,6 +93,15 @@ extension AppKit.NSColor {
 @available(watchOS, unavailable)
 extension UIKit.UIColor {
 
+    /// The "BlackGrayColor" asset catalog color.
+    static var blackGray: UIKit.UIColor {
+#if !os(watchOS)
+        .init(resource: .blackGray)
+#else
+        .init()
+#endif
+    }
+
     #warning("The \"greenColor\" color asset name resolves to a conflicting UIColor symbol \"green\". Try renaming the asset.")
 
     #warning("The \"orangeColor\" color asset name resolves to a conflicting UIColor symbol \"orange\". Try renaming the asset.")
@@ -85,6 +115,9 @@ extension UIKit.UIColor {
 @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
 extension SwiftUI.Color {
 
+    /// The "BlackGrayColor" asset catalog color.
+    static var blackGray: SwiftUI.Color { .init(.blackGray) }
+
     #warning("The \"greenColor\" color asset name resolves to a conflicting Color symbol \"green\". Try renaming the asset.")
 
     #warning("The \"orangeColor\" color asset name resolves to a conflicting Color symbol \"orange\". Try renaming the asset.")
@@ -96,6 +129,9 @@ extension SwiftUI.Color {
 @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
 extension SwiftUI.ShapeStyle where Self == SwiftUI.Color {
 
+    /// The "BlackGrayColor" asset catalog color.
+    static var blackGray: SwiftUI.Color { .init(.blackGray) }
+
 }
 #endif
 
@@ -105,6 +141,15 @@ extension SwiftUI.ShapeStyle where Self == SwiftUI.Color {
 @available(macOS 14.0, *)
 @available(macCatalyst, unavailable)
 extension AppKit.NSImage {
+
+    /// The "drawer-menu-icon" asset catalog image.
+    static var drawerMenuIcon: AppKit.NSImage {
+#if !targetEnvironment(macCatalyst)
+        .init(resource: .drawerMenuIcon)
+#else
+        .init()
+#endif
+    }
 
     /// The "halt" asset catalog image.
     static var halt: AppKit.NSImage {
@@ -124,10 +169,28 @@ extension AppKit.NSImage {
 #endif
     }
 
+    /// The "notification-icon" asset catalog image.
+    static var notificationIcon: AppKit.NSImage {
+#if !targetEnvironment(macCatalyst)
+        .init(resource: .notificationIcon)
+#else
+        .init()
+#endif
+    }
+
     /// The "running" asset catalog image.
     static var running: AppKit.NSImage {
 #if !targetEnvironment(macCatalyst)
         .init(resource: .running)
+#else
+        .init()
+#endif
+    }
+
+    /// The "search-icon" asset catalog image.
+    static var searchIcon: AppKit.NSImage {
+#if !targetEnvironment(macCatalyst)
+        .init(resource: .searchIcon)
 #else
         .init()
 #endif
@@ -140,6 +203,15 @@ extension AppKit.NSImage {
 @available(iOS 17.0, tvOS 17.0, *)
 @available(watchOS, unavailable)
 extension UIKit.UIImage {
+
+    /// The "drawer-menu-icon" asset catalog image.
+    static var drawerMenuIcon: UIKit.UIImage {
+#if !os(watchOS)
+        .init(resource: .drawerMenuIcon)
+#else
+        .init()
+#endif
+    }
 
     /// The "halt" asset catalog image.
     static var halt: UIKit.UIImage {
@@ -159,10 +231,28 @@ extension UIKit.UIImage {
 #endif
     }
 
+    /// The "notification-icon" asset catalog image.
+    static var notificationIcon: UIKit.UIImage {
+#if !os(watchOS)
+        .init(resource: .notificationIcon)
+#else
+        .init()
+#endif
+    }
+
     /// The "running" asset catalog image.
     static var running: UIKit.UIImage {
 #if !os(watchOS)
         .init(resource: .running)
+#else
+        .init()
+#endif
+    }
+
+    /// The "search-icon" asset catalog image.
+    static var searchIcon: UIKit.UIImage {
+#if !os(watchOS)
+        .init(resource: .searchIcon)
 #else
         .init()
 #endif

@@ -1,0 +1,18 @@
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/model/Truck.swift":
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/Truck.dia"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/Truck.o"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/Truck.d"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/Truck.swiftconstvalues"
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/Truck.swiftdeps"
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/SearchViewTableViewCell.swift":
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/SearchViewTableViewCell.swiftconstvalues"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/SearchViewTableViewCell.d"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/SearchViewTableViewCell.dia"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/SearchViewTableViewCell.o"
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/SearchViewTableViewCell.swiftdeps"
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/TruckTableViewCell.swift":
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckTableViewCell.dia"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckTableViewCell.o"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckTableViewCell.d"
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckTableViewCell.swiftdeps"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckTableViewCell.swiftconstvalues"

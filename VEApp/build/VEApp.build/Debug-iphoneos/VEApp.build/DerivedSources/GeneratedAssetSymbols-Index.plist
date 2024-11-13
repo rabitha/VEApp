@@ -8,6 +8,16 @@
 			<key>catalogPath</key>
 			<string>/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/Assets.xcassets</string>
 			<key>objcSymbol</key>
+			<string>ACColorNameBlackGrayColor</string>
+			<key>relativePath</key>
+			<string>./BlackGrayColor.colorset</string>
+			<key>swiftSymbol</key>
+			<string>blackGray</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/Assets.xcassets</string>
+			<key>objcSymbol</key>
 			<string>ACColorNameGreenColor</string>
 			<key>relativePath</key>
 			<string>./greenColor.colorset</string>
@@ -41,6 +51,16 @@
 			<key>catalogPath</key>
 			<string>/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/Assets.xcassets</string>
 			<key>objcSymbol</key>
+			<string>ACImageNameDrawerMenuIcon</string>
+			<key>relativePath</key>
+			<string>./drawer-menu-icon.imageset</string>
+			<key>swiftSymbol</key>
+			<string>drawerMenuIcon</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/Assets.xcassets</string>
+			<key>objcSymbol</key>
 			<string>ACImageNameHalt</string>
 			<key>relativePath</key>
 			<string>./halt.imageset</string>
@@ -61,11 +81,31 @@
 			<key>catalogPath</key>
 			<string>/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/Assets.xcassets</string>
 			<key>objcSymbol</key>
+			<string>ACImageNameNotificationIcon</string>
+			<key>relativePath</key>
+			<string>./notification-icon.imageset</string>
+			<key>swiftSymbol</key>
+			<string>notificationIcon</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/Assets.xcassets</string>
+			<key>objcSymbol</key>
 			<string>ACImageNameRunning</string>
 			<key>relativePath</key>
 			<string>./running.imageset</string>
 			<key>swiftSymbol</key>
 			<string>running</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSearchIcon</string>
+			<key>relativePath</key>
+			<string>./search-icon.imageset</string>
+			<key>swiftSymbol</key>
+			<string>searchIcon</string>
 		</dict>
 	</array>
 	<key>symbols</key>

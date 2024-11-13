@@ -317,10 +317,18 @@ SWIFT_CLASS("_TtC5VEApp11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITab;
 @class NSString;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC5VEApp6BaseVC")
+@interface BaseVC : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITab;
 
 SWIFT_CLASS("_TtC5VEApp22CustomTabBarController")
 @interface CustomTabBarController : UITabBarController
@@ -345,6 +353,36 @@ SWIFT_CLASS("_TtC5VEApp13SceneDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIView;
+@class UIPickerView;
+@class UISearchBar;
+
+SWIFT_CLASS("_TtC5VEApp23SearchViewTableViewCell")
+@interface SearchViewTableViewCell : UITableViewCell <UIPickerViewDataSource, UIPickerViewDelegate, UISearchBarDelegate>
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified searchView;
+- (void)awakeFromNib;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
+- (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+- (void)searchBar:(UISearchBar * _Nonnull)searchBar textDidChange:(NSString * _Nonnull)searchText;
+- (void)rightArrowTapped;
+- (void)searchBarTextDidBeginEditing:(UISearchBar * _Nonnull)searchBar;
+- (void)searchBarTextDidEndEditing:(UISearchBar * _Nonnull)searchBar;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5VEApp23StatusViewTableViewCell")
+@interface StatusViewTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified statusView;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UILabel;
 
 SWIFT_CLASS("_TtC5VEApp32TruckInDepthDetailViewController")
@@ -367,17 +405,15 @@ SWIFT_CLASS("_TtC5VEApp32TruckInDepthDetailViewController")
 @end
 
 @class UITableView;
-@class UIView;
 @class NSIndexPath;
-@class UITableViewCell;
 
 SWIFT_CLASS("_TtC5VEApp23TruckListViewController")
-@interface TruckListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface TruckListViewController : BaseVC <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForFooterInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForFooterInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -389,7 +425,8 @@ SWIFT_CLASS("_TtC5VEApp23TruckListViewController")
 @class UIButton;
 
 SWIFT_CLASS("_TtC5VEApp28TruckSubDetailViewController")
-@interface TruckSubDetailViewController : UIViewController
+@interface TruckSubDetailViewController : BaseVC <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified subTableview;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified registrationLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified statusLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified speedLabel;
@@ -398,12 +435,41 @@ SWIFT_CLASS("_TtC5VEApp28TruckSubDetailViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified locationLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lastUpdatedLabel;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (IBAction)showInDepthDetails:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIImageView;
+
+SWIFT_CLASS("_TtC5VEApp28TruckSubDetailsTableViewCell")
+@interface TruckSubDetailsTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified truckSubDetailsView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified leftLabelView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified registrationLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified bottomLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified statusLabelImg;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified subView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified rightLbl1;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified rightLbl2;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified rightLbl3;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified bottomLbl1;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified bottomLbl2;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified DetailsBtn;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC5VEApp18TruckTableViewCell")
 @interface TruckTableViewCell : UITableViewCell
@@ -426,6 +492,13 @@ SWIFT_CLASS("_TtC5VEApp14ViewController")
 @interface ViewController : UIViewController
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5VEApp13commonMethods")
+@interface commonMethods : UITableViewCell
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 

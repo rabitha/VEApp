@@ -9,7 +9,7 @@ import Foundation
 
 import UIKit
 
-class TruckListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TruckListViewController: BaseVC, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var tableView: UITableView!
     var trucks: [Truck] = []
@@ -20,9 +20,11 @@ class TruckListViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "TruckTableViewCell", bundle: nil), forCellReuseIdentifier: "TruckCell")
+        tableView.register(UINib(nibName: "StatusViewTableViewCell", bundle: nil), forCellReuseIdentifier: "StatusViewTableViewCell")
+        tableView.register(UINib(nibName: "SearchViewTableViewCell", bundle: nil), forCellReuseIdentifier: "SearchViewTableViewCell")
         // Set up the table view to use automatic row heights
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 300 // Estimate a reasonable height, e.g., 80 points
+        tableView.estimatedRowHeight = 80 // Estimate a reasonable height, e.g., 80 points
         
         // Parse JSON data
         loadTrucksData()
@@ -44,17 +46,18 @@ class TruckListViewController: UIViewController, UITableViewDelegate, UITableVie
     
     // MARK: - TableView DataSource Methods
     func numberOfSections(in tableView: UITableView) -> Int {
-        return trucks.count // Assuming one item per section
+        let numOfSections = trucks.count+2
+        print("numOfSections : \(numOfSections)")
+        return numOfSections // Assuming one item per section
     }
-
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 10 // Space between cells
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 1
     }
-
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let footerView = UIView()
-        footerView.backgroundColor = .clear // Make footer background clear to create spacing effect
-        return footerView
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = .clear // Make header background clear to create spacing effect
+        return headerView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,20 +65,30 @@ class TruckListViewController: UIViewController, UITableViewDelegate, UITableVie
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TruckCell", for: indexPath) as! TruckTableViewCell
-        let truck = trucks[indexPath.section]
-        cell.configure(with: truck) // Custom method to configure cell content
-        return cell
+        if indexPath.section == 0{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "StatusViewTableViewCell", for: indexPath) as! StatusViewTableViewCell
+            return cell
+        }else if indexPath.section == 1{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SearchViewTableViewCell", for: indexPath) as! SearchViewTableViewCell
+            return cell
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TruckCell", for: indexPath) as! TruckTableViewCell
+            let truck = trucks[indexPath.section-2]
+            cell.configure(with: truck) // Custom method to configure cell content
+            return cell
+        }
     }
     
     // MARK: - TableView Delegate Methods
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let truck = trucks[indexPath.section]
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let detailVC = storyboard.instantiateViewController(withIdentifier: "TruckSubDetailViewController") as? TruckSubDetailViewController {
-            detailVC.truck = truck
-            navigationController?.pushViewController(detailVC, animated: true)
+        if indexPath.section > 1{
+            let truck = trucks[indexPath.section-2]
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            if let detailVC = storyboard.instantiateViewController(withIdentifier: "TruckSubDetailViewController") as? TruckSubDetailViewController {
+                detailVC.truck = truck
+                navigationController?.pushViewController(detailVC, animated: true)
+            }
         }
     }
     
