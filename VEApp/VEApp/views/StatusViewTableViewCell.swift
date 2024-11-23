@@ -24,13 +24,14 @@ class StatusViewTableViewCell: UITableViewCell {
         // Background color for the view
         statusView.backgroundColor = .white
         statusView.layer.cornerRadius = 10
+        print("statusView.layer.frame : \(statusView.layer.frame.height)")
         
         // Create a horizontal stack view to hold the status items
         let stackView = UIStackView()
         stackView.axis = .horizontal
         stackView.alignment = .center
         stackView.distribution = .fillEqually
-        stackView.spacing = 20
+        stackView.spacing = 10
         stackView.translatesAutoresizingMaskIntoConstraints = false
         statusView.addSubview(stackView)
         
@@ -38,8 +39,8 @@ class StatusViewTableViewCell: UITableViewCell {
         NSLayoutConstraint.activate([
             stackView.leadingAnchor.constraint(equalTo: statusView.leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: statusView.trailingAnchor),
-            stackView.topAnchor.constraint(equalTo: statusView.topAnchor),
-            stackView.bottomAnchor.constraint(equalTo: statusView.bottomAnchor)
+            stackView.topAnchor.constraint(equalTo: statusView.topAnchor, constant: 10),
+            stackView.bottomAnchor.constraint(equalTo: statusView.bottomAnchor, constant: -20)
         ])
         
         // Add each status item to the stack view
@@ -76,7 +77,7 @@ class StatusViewTableViewCell: UITableViewCell {
             numberLabel.centerXAnchor.constraint(equalTo: container.centerXAnchor),
             numberLabel.topAnchor.constraint(equalTo: container.topAnchor),
             textLabel.centerXAnchor.constraint(equalTo: container.centerXAnchor),
-            textLabel.topAnchor.constraint(equalTo: numberLabel.bottomAnchor, constant: 4),
+            textLabel.topAnchor.constraint(equalTo: numberLabel.bottomAnchor),
             textLabel.bottomAnchor.constraint(equalTo: container.bottomAnchor)
         ])
         return container

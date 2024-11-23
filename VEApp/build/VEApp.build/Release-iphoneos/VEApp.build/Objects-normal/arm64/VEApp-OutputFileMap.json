@@ -1,0 +1,100 @@
+{
+  "" : {
+    "const-values" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/VEApp-master.swiftconstvalues",
+    "dependencies" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/VEApp-master.d",
+    "diagnostics" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/VEApp-master.dia",
+    "emit-module-dependencies" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/VEApp-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/VEApp-master-emit-module.dia",
+    "swift-dependencies" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/VEApp-master.swiftdeps"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/AppDelegate.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/AppDelegate.o"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/commomMethods/commonMethods.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/commonMethods.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/commonMethods.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/commonMethods.o"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/BaseVC.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/BaseVC.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/BaseVC.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/BaseVC.o"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/CustomTabBarController.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/CustomTabBarController.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/CustomTabBarController.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/CustomTabBarController.o"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/TruckInDepthDetailViewController.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckInDepthDetailViewController.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckInDepthDetailViewController.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckInDepthDetailViewController.o"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/TruckListViewController.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckListViewController.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckListViewController.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckListViewController.o"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/TruckSubDetailsTableViewCellDelegate.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCellDelegate.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCellDelegate.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCellDelegate.o"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/TruckSubDetailViewController.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailViewController.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailViewController.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailViewController.o"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/model/Truck.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/Truck.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/Truck.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/Truck.o"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/SceneDelegate.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/SceneDelegate.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/SceneDelegate.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/SceneDelegate.o"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/ViewController.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/ViewController.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/ViewController.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/ViewController.o"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/CircularProgressView.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/CircularProgressView.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/CircularProgressView.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/CircularProgressView.o"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/SearchViewTableViewCell.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/SearchViewTableViewCell.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/SearchViewTableViewCell.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/SearchViewTableViewCell.o"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/StatusViewTableViewCell.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/StatusViewTableViewCell.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/StatusViewTableViewCell.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/StatusViewTableViewCell.o"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/TruckInDepthTableViewCell.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckInDepthTableViewCell.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckInDepthTableViewCell.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckInDepthTableViewCell.o"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/TruckSubDetailsTableViewCell.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCell.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCell.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCell.o"
+  },
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/TruckTableViewCell.swift" : {
+    "index-unit-output-path" : "/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckTableViewCell.o",
+    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckTableViewCell.bc",
+    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/Objects-normal/arm64/TruckTableViewCell.o"
+  }
+}

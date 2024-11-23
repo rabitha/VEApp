@@ -1,0 +1,23 @@
+version: "Apple Swift version 6.0 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)"
+options: "fa86af88c957a45f95c0e6b0966da7d91378ba655b205b4229aa09df00dc84ba"
+build_start_time: [1732339345, 224979000]
+build_end_time: [1732339355, 194546000]
+inputs:
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/AppDelegate.swift": [1731300611, 718205381]
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/SceneDelegate.swift": [1731300611, 721185017]
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/ViewController.swift": [1731300611, 723239389]
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/commomMethods/commonMethods.swift": [1731492329, 866399148]
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/BaseVC.swift": [1731492316, 491282989]
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/CustomTabBarController.swift": [1731411822, 549467543]
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/TruckInDepthDetailViewController.swift": [1732264674, 850435415]
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/TruckListViewController.swift": [1732339066, 229763657]
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/TruckSubDetailViewController.swift": [1731925026, 576408657]
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/TruckSubDetailsTableViewCellDelegate.swift": [1731909078, 257662327]
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/model/Truck.swift": [1732170931, 875471355]
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/CircularProgressView.swift": [1732338454, 549302254]
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/SearchViewTableViewCell.swift": [1731742302, 588471631]
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/StatusViewTableViewCell.swift": [1731737002, 609566420]
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/TruckInDepthTableViewCell.swift": [1732339337, 997244439]
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/TruckSubDetailsTableViewCell.swift": [1731909078, 268833541]
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/TruckTableViewCell.swift": [1731492316, 461418286]
+  "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Release-iphoneos/VEApp.build/DerivedSources/GeneratedAssetSymbols.swift": [1732339339, 998503718]

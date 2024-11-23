@@ -34,16 +34,6 @@ class TruckSubDetailViewController: BaseVC, UITableViewDelegate, UITableViewData
         subTableview.rowHeight = UITableView.automaticDimension
         subTableview.estimatedRowHeight = 80
         subTableview.separatorStyle = .none
-     //   subTableview.backgroundColor = .clear
-      /*  if let truck = truck {
-            registrationLabel.text = truck.registrationNumber
-            statusLabel.text = truck.status
-            speedLabel.text = "\(truck.speed) km/h"
-            fuelLevelLabel.text = "\(truck.fuelLevel)%"
-            adBlueLevelLabel.text = "\(truck.adBlueLevel)%"
-            locationLabel.text = truck.lastLocation
-            lastUpdatedLabel.text = "Last Updated: \(truck.lastUpdated)"
-        }*/
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -80,6 +70,7 @@ class TruckSubDetailViewController: BaseVC, UITableViewDelegate, UITableViewData
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "TruckSubDetailsTableViewCell", for: indexPath) as! TruckSubDetailsTableViewCell
             if let trucks = truck {
+                cell.truck = truck
                 cell.configure(with: truck!) // Custom method to configure cell content
             }
             return cell
@@ -100,14 +91,5 @@ class TruckSubDetailViewController: BaseVC, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return tableView.rowHeight
-    }
-    
-    
-    @IBAction func showInDepthDetails(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let inDepthDetailVC = storyboard.instantiateViewController(withIdentifier: "TruckInDepthDetailViewController") as? TruckInDepthDetailViewController {
-            inDepthDetailVC.truck = truck
-            navigationController?.pushViewController(inDepthDetailVC, animated: true)
-        }
     }
 }

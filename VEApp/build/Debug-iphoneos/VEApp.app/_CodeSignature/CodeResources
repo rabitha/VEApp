@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		HmdWdRCdQDcBs4etsjWcpXA30+g=
+		zYltNUHlwIwkvkDxY6pmg9CAn5A=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -26,11 +26,19 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		UN0B9l6S6IDnvJVN8Ano1agyvws=
+		ba06gAc4UmVZ8JDOg/GgsKQPK5Q=
 		</data>
 		<key>Base.lproj/Main.storyboardc/K4g-QQ-QOx-view-VHu-53-iYd.nib</key>
 		<data>
 		M6It4kLs1AQoYc7HORT9nkDJD00=
+		</data>
+		<key>Base.lproj/Main.storyboardc/LSo-h8-qal-view-OmV-0h-kPx.nib</key>
+		<data>
+		DPY7HUTIdPlfaxWMV0lBzhxMGEE=
+		</data>
+		<key>Base.lproj/Main.storyboardc/TruckInDepthDetailViewController.nib</key>
+		<data>
+		w0//zBBFNHq4OAe0Z9Nph42Q5w8=
 		</data>
 		<key>Base.lproj/Main.storyboardc/TruckListViewController.nib</key>
 		<data>
@@ -72,9 +80,13 @@
 		<data>
 		uqG+Tiy3qVSnhKnHIRr1Bl2/d0U=
 		</data>
+		<key>TruckInDepthTableViewCell.nib</key>
+		<data>
+		PRzs9nHjzD+sSR0u0RieXyDkXlw=
+		</data>
 		<key>TruckSubDetailsTableViewCell.nib</key>
 		<data>
-		50iyP5SfqHap0JBFChmKCx1G2Ac=
+		kM6PYtYeWc2RyqX1ODgZTuJtAJ0=
 		</data>
 		<key>TruckTableViewCell.nib</key>
 		<data>
@@ -82,11 +94,11 @@
 		</data>
 		<key>VEApp.debug.dylib</key>
 		<data>
-		O70U39pUzuMopt3T4ctckfTQQ18=
+		p50CSmq/YbPhFDOhbRXEqHT9BAs=
 		</data>
 		<key>__preview.dylib</key>
 		<data>
-		skXgBn27+BAUhWoVc/b2aGylZlI=
+		fWnq2MavkyaclgUHP7UuMj2J5SM=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -99,7 +111,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3MWia7D0uB6TyBdCUgrknnbXQWeLrLP5nm6d6UW8kKk=
+			fPElGmKyp9BpnzMHMFCZ9bMam6DD6S1YipLd28Vid0g=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -134,7 +146,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RYC7QfLDXaywlSnA4LOZIJsMHG3Qapg0ndsCtugbmjs=
+			yWgex2rqEta0rJQuGtu7+Ymo7VSrMnPZrAAQagcIA+s=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/K4g-QQ-QOx-view-VHu-53-iYd.nib</key>
@@ -142,6 +154,20 @@
 			<key>hash2</key>
 			<data>
 			sRNknMyk8eRT0WkVc3qFrQ/8DE5uW/C5Hh/csXUic+4=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/LSo-h8-qal-view-OmV-0h-kPx.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ia0w9+ZM71ZBCig4KSCru8TS+xkRjZl+YauLfHjOSXk=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/TruckInDepthDetailViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EZhHJpvxI5UzzkQP8kw3hucAQdXlg9Q2MKq33xVKHJE=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/TruckListViewController.nib</key>
@@ -200,11 +226,18 @@
 			20/eWtVB6MGv6g22z/ecgzVAspxSj4xhTPhEIVTYeY8=
 			</data>
 		</dict>
+		<key>TruckInDepthTableViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wJMY8Rn+gCVcEx5mdSOb1cdSr0D/PVyZttW84DvdIMY=
+			</data>
+		</dict>
 		<key>TruckSubDetailsTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jNDh8a9SIbhxGIBftnRFrmVaY4p5alqNTplZ4WYRrjo=
+			KZOXWAPJaAOQH5GITBOgm6k9gWAQ6/X404RrZjw2ALc=
 			</data>
 		</dict>
 		<key>TruckTableViewCell.nib</key>
@@ -218,14 +251,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jFIVEGcLg9JWkk7OBP/PAxqTl92/l3bcquCsog7lZS4=
+			JJe0utHbedLZ758OIQlz2Nqgkv8vvZRPfI9REtexpK8=
 			</data>
 		</dict>
 		<key>__preview.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0T92C4e6sCFo4k4HFmMTydoMMUpR8hJKUWW3gjOQ6T4=
+			+t+OrPZZigR9i9nfsC4gU8tscNrOzKjI4Q0xU/n0dwg=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>

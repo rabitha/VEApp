@@ -16,7 +16,12 @@ struct Truck: Codable {
     let lastUpdated: String
     let distanceToService: String
     let hoursToService: String
-    let tripFuelEfficiency: String
+    let distanceToServiceStatus: String
+    let hoursToServiceStatus: String
+    let tripAFuelEfficiencyKM: String
+    let tripBFuelEfficiencyKM: String
+    let tripAFuelEfficiencykmpl: String
+    let tripBFuelEfficiencykmpl: String
     let engineTemperature: String
     let outsideTemperature: String
     let issues: [String]
@@ -25,4 +30,7 @@ struct Truck: Codable {
     let driverId: String
     let driverPhone: String
     let licenseNumber: String
+    let dieselLevel: Int
+    let dieselCapacity: Int
+    let adBlueCapacity: Int
 }
