@@ -25,11 +25,10 @@ struct Truck: Codable {
     let engineTemperature: String
     let outsideTemperature: String
     let issues: [String]
-    let faults: [String]
-    let driverName: String
-    let driverId: String
-    let driverPhone: String
-    let licenseNumber: String
+    let faults: [String:String]
+    let detailsOfFaults: [String:String]
+    let otherIssues: [String:String]
+    let driverDetails:[String:String]
     let dieselLevel: Int
     let dieselCapacity: Int
     let adBlueCapacity: Int

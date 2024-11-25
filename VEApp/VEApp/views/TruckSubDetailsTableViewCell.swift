@@ -52,7 +52,7 @@ class TruckSubDetailsTableViewCell: UITableViewCell {
         bottomLabel.text = truck.registrationNumber
         rightLbl1.text = truck.distanceToService
         rightLbl2.text = truck.hoursToService
-        rightLbl3.text = truck.tripFuelEfficiency
+        rightLbl3.text = truck.tripAFuelEfficiencyKM
         bottomLbl1.text = truck.lastLocation
         bottomLbl2.text = "last Updated on : \(truck.lastUpdated)"
         

@@ -455,6 +455,8 @@ SWIFT_CLASS("_TtC5VEApp25TruckInDepthTableViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified r2;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified r3;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified r4;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified faultCount;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified faultListView;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);

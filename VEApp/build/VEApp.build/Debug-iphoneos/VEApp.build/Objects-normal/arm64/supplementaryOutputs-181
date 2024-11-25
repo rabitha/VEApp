@@ -1,0 +1,18 @@
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/BaseVC.swift":
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/BaseVC.swiftdeps"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/BaseVC.dia"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/BaseVC.swiftconstvalues"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/BaseVC.d"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/BaseVC.o"
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/commomMethods/commonMethods.swift":
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/commonMethods.swiftconstvalues"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/commonMethods.dia"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/commonMethods.d"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/commonMethods.o"
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/commonMethods.swiftdeps"
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/CustomTabBarController.swift":
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/CustomTabBarController.swiftconstvalues"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/CustomTabBarController.o"
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/CustomTabBarController.swiftdeps"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/CustomTabBarController.dia"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/CustomTabBarController.d"
