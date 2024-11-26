@@ -111,74 +111,25 @@ class TruckInDepthTableViewCell: UITableViewCell {
         if truck.distanceToServiceStatus == "Overdue"{
             r1.textColor = UIColor.red
         }else{
-            r1.textColor = UIColor.green
+            r1.textColor = UIColor.blue
         }
         r2.text = truck.hoursToServiceStatus
         if truck.hoursToServiceStatus == "Overdue"{
             r2.textColor = UIColor.red
         }else{
-            r2.textColor = UIColor.green
+            r2.textColor = UIColor.blue
         }
         r3.text = truck.tripAFuelEfficiencykmpl
         r4.text = truck.tripBFuelEfficiencykmpl
         
         faultCount.text = String(truck.faults.count)
         setupUI()
-       /* // Create and configure the parent stack view
-        let parentStackView = UIStackView()
-        parentStackView.axis = .vertical
-        parentStackView.spacing = 10
-        parentStackView.alignment = .fill
-        parentStackView.distribution = .fillEqually
-        parentStackView.translatesAutoresizingMaskIntoConstraints = false
-        
-        // Add the parent stack view to the main view
-        faultListView.addSubview(parentStackView)
-        NSLayoutConstraint.activate([
-            parentStackView.leadingAnchor.constraint(equalTo: faultListView.leadingAnchor, constant: 16),
-            parentStackView.trailingAnchor.constraint(equalTo: faultListView.trailingAnchor, constant: -16),
-            parentStackView.topAnchor.constraint(equalTo: faultListView.safeAreaLayoutGuide.topAnchor, constant: 16),
-            parentStackView.bottomAnchor.constraint(equalTo: faultListView.safeAreaLayoutGuide.bottomAnchor, constant: -16) // Bottom constraint
-        ])
-
-        // Add rows dynamically based on API data
-        for (text1, text2) in truck.faults {
-            // Create a horizontal stack for the row
-            let rowStackView = UIStackView()
-            rowStackView.axis = .horizontal
-            rowStackView.spacing = 10
-            rowStackView.alignment = .center
-            rowStackView.distribution = .fill
-            
-            // Create two labels
-            let label1 = UILabel()
-            label1.text = text1
-            label1.textAlignment = .left
-            label1.numberOfLines = 0
-            label1.font = UIFont.systemFont(ofSize: 12)
-            
-            let label2 = UILabel()
-            label2.text = text2
-            label2.textAlignment = .left
-            label2.numberOfLines = 0
-            label2.font = UIFont.systemFont(ofSize: 12)
-            
-            // Add labels to the row stack
-            rowStackView.addArrangedSubview(label1)
-            rowStackView.addArrangedSubview(label2)
-            // Add the row stack to the parent stack
-            parentStackView.addArrangedSubview(rowStackView)
-        }*/
-        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
     }
     
-    
-      
     func setupUI() {
         guard let truck = truck else { return } // Ensure truck is not nil
         
@@ -190,65 +141,144 @@ class TruckInDepthTableViewCell: UITableViewCell {
         mainStackView.translatesAutoresizingMaskIntoConstraints = false
         
         faultListView.addSubview(mainStackView)
-        
         NSLayoutConstraint.activate([
-            mainStackView.leadingAnchor.constraint(equalTo: faultListView.leadingAnchor, constant: 16),
-            mainStackView.trailingAnchor.constraint(equalTo: faultListView.trailingAnchor, constant: -16),
-            mainStackView.topAnchor.constraint(equalTo: faultListView.safeAreaLayoutGuide.topAnchor, constant: 16),
-            mainStackView.bottomAnchor.constraint(equalTo: faultListView.safeAreaLayoutGuide.bottomAnchor, constant: -16) // Ensure bottom constraint
+            mainStackView.leadingAnchor.constraint(equalTo: faultListView.leadingAnchor, constant: 10),
+            mainStackView.trailingAnchor.constraint(equalTo: faultListView.trailingAnchor, constant: -10),
+            mainStackView.topAnchor.constraint(equalTo: faultListView.safeAreaLayoutGuide.topAnchor, constant: 5),
+            mainStackView.bottomAnchor.constraint(equalTo: faultListView.safeAreaLayoutGuide.bottomAnchor, constant: 0) // Ensure bottom constraint
         ])
         
         // Add sections to the main stack view
         let faultsStackView = createFaultsView(truck: truck)
         mainStackView.addArrangedSubview(faultsStackView)
         
-        let issuesLabel = UILabel()
-        issuesLabel.text = "Other Issues: \(truck.otherIssues.count)"
-        issuesLabel.font = .boldSystemFont(ofSize: 18)
-        mainStackView.addArrangedSubview(issuesLabel)
+        // Add sections to the main stack view
+        let faultsDetailsStackView = createFaultsDetailsView(truck: truck)
+        mainStackView.addArrangedSubview(faultsDetailsStackView)
         
+        let otherIssuesStackView = createOtherIssuesView(truck: truck)
+        mainStackView.addArrangedSubview(otherIssuesStackView)
+        
+        // Create a dark line as a separator
+        let separatorLine = UIView()
+        separatorLine.backgroundColor = .darkGray // Set your preferred color
+        separatorLine.heightAnchor.constraint(equalToConstant: 1).isActive = true // Set line height
+        mainStackView.addArrangedSubview(separatorLine)
+                
         let issuesStackView = createIssuesView(truck: truck)
         mainStackView.addArrangedSubview(issuesStackView)
+        
+        // Create a dark line as a separator
+        let separationLine = UIView()
+        separationLine.backgroundColor = .darkGray // Set your preferred color
+        separationLine.heightAnchor.constraint(equalToConstant: 1).isActive = true // Set line height
+        mainStackView.addArrangedSubview(separationLine)
         
         let driverDetailsStackView = createDriverDetailsView(truck: truck)
         mainStackView.addArrangedSubview(driverDetailsStackView)
     }
     
     // MARK: - Helper Methods
-    
     func createFaultsView(truck: Truck) -> UIStackView {
         let faultsStackView = UIStackView()
         faultsStackView.axis = .vertical
         faultsStackView.alignment = .leading
         faultsStackView.spacing = 8
-        
+        faultsStackView.distribution = .fill // Allows dynamic height adjustment
+
         for (text1, text2) in truck.faults {
-            let label = UILabel()
-            label.text = text1
-            label.font = .systemFont(ofSize: 16)
-            faultsStackView.addArrangedSubview(label)
-            
+            let rowStackView = UIStackView()
+            rowStackView.axis = .horizontal
+            rowStackView.spacing = 8
+            rowStackView.alignment = .leading
+            rowStackView.distribution = .fill
+
+            let label1 = UILabel()
+            label1.text = text1
+            label1.font = .systemFont(ofSize: 12)
+            label1.numberOfLines = 0 // Multi-line support
+            label1.setContentHuggingPriority(.defaultLow, for: .horizontal)
+            label1.setContentCompressionResistancePriority(.required, for: .horizontal)
+            rowStackView.addArrangedSubview(label1)
+
             let label2 = UILabel()
             label2.text = text2
-            label2.font = .systemFont(ofSize: 16)
-            faultsStackView.addArrangedSubview(label2)
+            label2.font = .systemFont(ofSize: 12)
+            label2.textAlignment = .right
+            label2.numberOfLines = 0
+            label2.setContentHuggingPriority(.defaultLow, for: .horizontal)
+            label2.setContentCompressionResistancePriority(.required, for: .horizontal)
+            rowStackView.addArrangedSubview(label2)
+
+            faultsStackView.addArrangedSubview(rowStackView)
         }
-        
+        return faultsStackView
+    }
+    
+    func createFaultsDetailsView(truck: Truck) -> UIStackView {
+        let faultsStackView = UIStackView()
+        faultsStackView.axis = .vertical
+        faultsStackView.alignment = .leading
+        faultsStackView.spacing = 8
+        faultsStackView.distribution = .fill // Allows dynamic resizing for content
+
         for (detailMessage1, detailMessage2) in truck.detailsOfFaults {
+            // Create a horizontal stack for the row
+            let rowStackView = UIStackView()
+            rowStackView.axis = .horizontal
+            rowStackView.spacing = 8
+            rowStackView.alignment = .center // Center align to balance row height
+            rowStackView.distribution = .fill
+
+            // Configure the first label
             let levelInfo = UILabel()
+            levelInfo.numberOfLines = 0 // Supports multi-line text
             levelInfo.text = detailMessage1
-            levelInfo.font = .italicSystemFont(ofSize: 14)
-            levelInfo.numberOfLines = 0
-            faultsStackView.addArrangedSubview(levelInfo)
-            
+            levelInfo.textAlignment = .left
+            levelInfo.font = .systemFont(ofSize: 12)
+            levelInfo.setContentHuggingPriority(.defaultLow, for: .horizontal)
+            levelInfo.setContentCompressionResistancePriority(.required, for: .horizontal)
+            rowStackView.addArrangedSubview(levelInfo)
+
+            // Configure the second label
             let levelInfo2 = UILabel()
             levelInfo2.text = detailMessage2
-            levelInfo2.font = .italicSystemFont(ofSize: 14)
-            levelInfo2.numberOfLines = 0
-            faultsStackView.addArrangedSubview(levelInfo2)
+            levelInfo2.textAlignment = .right
+            levelInfo2.font = .systemFont(ofSize: 12)
+            levelInfo2.textColor = .red
+            levelInfo2.numberOfLines = 0 // Supports multi-line text
+            levelInfo2.setContentHuggingPriority(.defaultLow, for: .horizontal)
+            levelInfo2.setContentCompressionResistancePriority(.required, for: .horizontal)
+            rowStackView.addArrangedSubview(levelInfo2)
+
+            // Add the row stack to the parent stack
+            faultsStackView.addArrangedSubview(rowStackView)
         }
-        
         return faultsStackView
+    }
+
+    
+    func createOtherIssuesView(truck: Truck) -> UIStackView {
+        // Create a horizontal stack for the row
+        let rowStackView = UIStackView()
+        rowStackView.axis = .horizontal
+        rowStackView.spacing = 8
+        rowStackView.alignment = .center
+        rowStackView.distribution = .fill
+        
+        let issuesLabel = UILabel()
+        issuesLabel.text = "Other Issues: "
+        issuesLabel.font = .systemFont(ofSize: 12)
+        issuesLabel.textAlignment = .left
+        rowStackView.addArrangedSubview(issuesLabel)
+        
+        let issuesLabelCount = UILabel()
+        issuesLabelCount.text = String(truck.otherIssues.count)
+        issuesLabelCount.font = .systemFont(ofSize: 12)
+        issuesLabelCount.textAlignment = .right
+        rowStackView.addArrangedSubview(issuesLabelCount)
+        
+        return rowStackView
     }
     
     func createIssuesView(truck: Truck) -> UIStackView {
@@ -256,38 +286,87 @@ class TruckInDepthTableViewCell: UITableViewCell {
         issuesStackView.axis = .horizontal
         issuesStackView.alignment = .center
         issuesStackView.spacing = 8
-        
-        for _ in 0..<truck.otherIssues.count {
+
+        for (issueKey,issueText) in truck.otherIssues {
+            // Create a vertical stack for each issue
+            let issueContainer = UIStackView()
+            issueContainer.axis = .vertical
+            issueContainer.alignment = .center
+            issueContainer.spacing = 4 // Space between the box and the label
+
+            // Create the box (issueIcon)
             let issueIcon = UIView()
             issueIcon.backgroundColor = .systemGray5
-            issueIcon.layer.cornerRadius = 8
+            issueIcon.layer.cornerRadius = 12
+            issueIcon.layer.borderWidth = 1.0
+            issueIcon.layer.borderColor = UIColor.red.cgColor
             issueIcon.widthAnchor.constraint(equalToConstant: 50).isActive = true
             issueIcon.heightAnchor.constraint(equalToConstant: 50).isActive = true
-            issuesStackView.addArrangedSubview(issueIcon)
+
+            // Create the label
+            let issueLabel = UILabel()
+            issueLabel.text = issueKey 
+            issueLabel.font = .systemFont(ofSize: 12)
+            issueLabel.textAlignment = .center
+            issueLabel.textColor = .darkGray
+            issueLabel.numberOfLines = 0 // Supports wrapping for long text
+
+            // Add the box and label to the vertical stack
+            issueContainer.addArrangedSubview(issueIcon)
+            issueContainer.addArrangedSubview(issueLabel)
+
+            // Add the vertical stack to the horizontal stack
+            issuesStackView.addArrangedSubview(issueContainer)
         }
-        
+
         return issuesStackView
     }
+
     
     func createDriverDetailsView(truck: Truck) -> UIStackView {
         let driverDetailsStackView = UIStackView()
         driverDetailsStackView.axis = .vertical
         driverDetailsStackView.alignment = .leading
         driverDetailsStackView.spacing = 8
-        
+
         for (detailMessage3, detailMessage4) in truck.driverDetails {
+            // Create a horizontal stack for the row
+            let rowStackView = UIStackView()
+            rowStackView.axis = .horizontal
+            rowStackView.spacing = 10
+            rowStackView.alignment = .center // Ensures alignment of both labels
+            rowStackView.distribution = .fill
+
+            // Label for the first detail
             let labelDetail1 = UILabel()
             labelDetail1.text = detailMessage3
-            labelDetail1.font = .systemFont(ofSize: 16)
-            driverDetailsStackView.addArrangedSubview(labelDetail1)
-            
-                let labelDetail2 = UILabel()
-                labelDetail2.text = detailMessage4
-                labelDetail2.font = .systemFont(ofSize: 16)
-                driverDetailsStackView.addArrangedSubview(labelDetail2)
+            labelDetail1.font = .systemFont(ofSize: 12)
+            labelDetail1.numberOfLines = 0
+            labelDetail1.setContentHuggingPriority(.defaultHigh, for: .horizontal) // Prevent unnecessary stretching
+            labelDetail1.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal) // Prevent truncation
+            rowStackView.addArrangedSubview(labelDetail1)
+
+            // Spacer to push labelDetail2 to the right
+            let spacer = UIView()
+            spacer.setContentHuggingPriority(.required, for: .horizontal) // Allow it to expand
+            rowStackView.addArrangedSubview(spacer)
+
+            // Label for the second detail
+            let labelDetail2 = UILabel()
+            labelDetail2.text = detailMessage4
+            labelDetail2.font = .systemFont(ofSize: 12)
+            labelDetail2.textColor = UIColor.blue
+            labelDetail2.numberOfLines = 0
+            labelDetail2.textAlignment = .right
+            labelDetail2.setContentHuggingPriority(.defaultHigh, for: .horizontal) // Prevent unnecessary stretching
+            labelDetail2.setContentCompressionResistancePriority(.required, for: .horizontal) // Prevent truncation
+            rowStackView.addArrangedSubview(labelDetail2)
+
+            // Add the row stack to the main stack
+            driverDetailsStackView.addArrangedSubview(rowStackView)
         }
-        
         return driverDetailsStackView
     }
 
+    
 }
