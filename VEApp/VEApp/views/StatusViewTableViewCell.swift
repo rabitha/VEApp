@@ -8,11 +8,22 @@
 import UIKit
 
 class StatusViewTableViewCell: UITableViewCell {
+    
+    var trucks: [Truck] = []
 
     @IBOutlet weak var statusView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         setupStatusView()
+        
+        // Filter non-nil trucks with status "Running"
+        let runningTrucks = trucks.compactMap { $0 }.filter { $0.status == "Running" }
+
+        // Get the count of running trucks
+        let runningTruckCount = runningTrucks.count
+
+        // Print the count
+        print("Number of running trucks: \(runningTruckCount)")
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

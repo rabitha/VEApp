@@ -333,11 +333,20 @@ SWIFT_CLASS("_TtC5VEApp20CircularProgressView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC5VEApp12CustomTabBar")
+@interface CustomTabBar : UITabBar
+- (CGSize)sizeThatFits:(CGSize)size SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UITab;
 
 SWIFT_CLASS("_TtC5VEApp22CustomTabBarController")
 @interface CustomTabBarController : UITabBarController
 - (void)viewDidLoad;
+- (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithTabs:(NSArray<UITab *> * _Nonnull)tabs OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=18.0);
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;

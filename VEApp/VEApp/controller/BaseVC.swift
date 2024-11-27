@@ -18,7 +18,10 @@ class BaseVC: UIViewController{
          //   view.backgroundColor = UIColor(red: 242.0, green: 242.0, blue: 242.0, alpha: 1.0)
             
             // Create a container view for the custom navigation bar
-            let navBar = UIView()
+            let navBar = UIView()            
+            // Apply corner radius
+            navBar.layer.cornerRadius = 12
+            navBar.layer.masksToBounds = true
             navBar.backgroundColor = UIColor.systemPurple
             navBar.translatesAutoresizingMaskIntoConstraints = false
             view.addSubview(navBar)
