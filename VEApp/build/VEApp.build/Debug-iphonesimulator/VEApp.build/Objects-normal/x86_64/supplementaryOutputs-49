@@ -1,0 +1,24 @@
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/CustomTabBarController.swift":
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/CustomTabBarController.swiftdeps"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/CustomTabBarController.dia"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/CustomTabBarController.d"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/CustomTabBarController.o"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/CustomTabBarController.swiftconstvalues"
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/commomMethods/commonMethods.swift":
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/commonMethods.dia"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/commonMethods.o"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/commonMethods.swiftconstvalues"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/commonMethods.d"
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/commonMethods.swiftdeps"
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/HomeViewController.swift":
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/HomeViewController.d"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/HomeViewController.dia"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/HomeViewController.swiftconstvalues"
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/HomeViewController.swiftdeps"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/HomeViewController.o"
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/BaseVC.swift":
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/BaseVC.o"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/BaseVC.swiftconstvalues"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/BaseVC.d"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/BaseVC.dia"
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/BaseVC.swiftdeps"

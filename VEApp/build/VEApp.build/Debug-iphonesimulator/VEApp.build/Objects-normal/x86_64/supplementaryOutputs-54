@@ -1,0 +1,18 @@
+"/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/DerivedSources/GeneratedAssetSymbols.swift":
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/GeneratedAssetSymbols.d"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/GeneratedAssetSymbols.o"
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftdeps"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/GeneratedAssetSymbols.dia"
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/SceneDelegate.swift":
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/SceneDelegate.swiftconstvalues"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/SceneDelegate.d"
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/SceneDelegate.swiftdeps"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/SceneDelegate.dia"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/SceneDelegate.o"
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/ViewController.swift":
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/ViewController.d"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/ViewController.dia"
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/ViewController.swiftdeps"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/ViewController.o"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/ViewController.swiftconstvalues"

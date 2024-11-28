@@ -9,8 +9,9 @@ import UIKit
 
 class TruckSubDetailsTableViewCell: UITableViewCell {
     weak var delegate: TruckSubDetailsTableViewCellDelegate?
-    var truck: Truck? 
+    var truck: Truck?
     
+    @IBOutlet weak var lblLeftText: UILabel!
     var shapeLayer1: CAShapeLayer!
     var shapeLayer2: CAShapeLayer!
     var circularPath1: UIBezierPath!
@@ -41,14 +42,22 @@ class TruckSubDetailsTableViewCell: UITableViewCell {
         truckSubDetailsView.layer.cornerRadius = 10.0
         DetailsBtn.layer.cornerRadius = 10.0
     }
-
+    
     func configure(with truck: Truck) {
         registrationLabel.text = truck.id
         let imgName = commonMethods().passStatusGetImgName(st: truck.status)
         statusLabelImg.image =  UIImage(named: imgName)
         let truckStatusColor = commonMethods().passStatusGetColor(st: truck.status)
-        print("truck : \(truck)")
         leftLabelView.backgroundColor = UIColor(named: truckStatusColor)
+        
+        lblLeftText.text = "Major Issues"
+        // Calculate text size and update constraints dynamically
+        let textSize = lblLeftText.text?.size(withAttributes: [.font: lblLeftText.font!]) ?? .zero
+        lblLeftText.widthAnchor.constraint(equalToConstant: textSize.height).isActive = true
+        lblLeftText.heightAnchor.constraint(equalToConstant: textSize.width).isActive = true
+        lblLeftText.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2) // Rotate counterclockwise
+        lblLeftText.textColor = .blue //UIColor(red: 250.0, green: 110.0, blue: 243.0, alpha: 1.0)
+        
         bottomLabel.text = truck.registrationNumber
         rightLbl1.text = truck.distanceToService
         rightLbl2.text = truck.hoursToService
@@ -68,7 +77,7 @@ class TruckSubDetailsTableViewCell: UITableViewCell {
         adBlueCircularView.progress = adBlueProgress
         centalLbl2.text = "\(truck.adBlueLevel)/\(truck.adBlueCapacity)"
         btmLbl2.text = "AdBlue"
-     }
+    }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

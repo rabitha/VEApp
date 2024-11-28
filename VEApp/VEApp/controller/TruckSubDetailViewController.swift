@@ -8,8 +8,13 @@
 import UIKit
 import Foundation
 
-class TruckSubDetailViewController: BaseVC, UITableViewDelegate, UITableViewDataSource {
+protocol TruckSubDetailsTableViewCellDelegate: AnyObject {
+    func didTapDetailsButton(truck: Truck)
+}
+
+class TruckSubDetailViewController: BaseVC, UITableViewDelegate, UITableViewDataSource,TruckSubDetailsTableViewCellDelegate {
     var truck: Truck?
+    var trucks: [Truck] = []
     
     @IBOutlet weak var subTableview: UITableView!    
     @IBOutlet weak var registrationLabel: UILabel!
@@ -63,6 +68,10 @@ class TruckSubDetailViewController: BaseVC, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: "StatusViewTableViewCell", for: indexPath) as! StatusViewTableViewCell
+            cell.runningStatus = getCountByStatus(status: "Running",trucks: trucks)
+            cell.idleStatus = getCountByStatus(status: "idle",trucks: trucks)
+            cell.stoppedStatus = getCountByStatus(status: "halt",trucks: trucks)
+            cell.offlineStatus = getCountByStatus(status: "offline",trucks: trucks)
             return cell
         }else if indexPath.section == 1{
             let cell = tableView.dequeueReusableCell(withIdentifier: "SearchViewTableViewCell", for: indexPath) as! SearchViewTableViewCell
@@ -71,6 +80,7 @@ class TruckSubDetailViewController: BaseVC, UITableViewDelegate, UITableViewData
             let cell = tableView.dequeueReusableCell(withIdentifier: "TruckSubDetailsTableViewCell", for: indexPath) as! TruckSubDetailsTableViewCell
             if let trucks = truck {
                 cell.truck = truck
+                cell.delegate = self
                 cell.configure(with: truck!) // Custom method to configure cell content
             }
             return cell
@@ -84,12 +94,25 @@ class TruckSubDetailViewController: BaseVC, UITableViewDelegate, UITableViewData
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             if let inDepthDetailVC = storyboard.instantiateViewController(withIdentifier: "TruckInDepthDetailViewController") as? TruckInDepthDetailViewController {
                     inDepthDetailVC.truck = truck
-                navigationController?.pushViewController(inDepthDetailVC, animated: true)
+                    inDepthDetailVC.trucks = trucks
+                    navigationController?.pushViewController(inDepthDetailVC, animated: true)
             }
         }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return tableView.rowHeight
+    }
+    
+    func didTapDetailsButton(truck: Truck) {
+        print("Details button tapped for truck: \(truck.lastLocation), status: \(truck.status)")
+        
+        // Navigate to a new screen or perform desired action
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let inDepthDetailVC = storyboard.instantiateViewController(withIdentifier: "TruckInDepthDetailViewController") as? TruckInDepthDetailViewController {
+            inDepthDetailVC.truck = truck
+            inDepthDetailVC.trucks = trucks
+            navigationController?.pushViewController(inDepthDetailVC, animated: true)
+        }
     }
 }

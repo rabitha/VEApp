@@ -1,0 +1,24 @@
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/TruckListViewController.swift":
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/TruckListViewController.swiftdeps"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/TruckListViewController.swiftconstvalues"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/TruckListViewController.o"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/TruckListViewController.dia"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/TruckListViewController.d"
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/MoreViewController.swift":
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/MoreViewController.o"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/MoreViewController.swiftconstvalues"
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/MoreViewController.swiftdeps"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/MoreViewController.dia"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/MoreViewController.d"
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/PlannerViewController.swift":
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/PlannerViewController.swiftdeps"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/PlannerViewController.dia"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/PlannerViewController.o"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/PlannerViewController.swiftconstvalues"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/PlannerViewController.d"
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/TruckInDepthDetailViewController.swift":
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/TruckInDepthDetailViewController.o"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/TruckInDepthDetailViewController.dia"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/TruckInDepthDetailViewController.d"
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/TruckInDepthDetailViewController.swiftdeps"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/TruckInDepthDetailViewController.swiftconstvalues"

@@ -352,6 +352,30 @@ SWIFT_CLASS("_TtC5VEApp22CustomTabBarController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC5VEApp18HomeViewController")
+@interface HomeViewController : BaseVC
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5VEApp18MoreViewController")
+@interface MoreViewController : BaseVC
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5VEApp21PlannerViewController")
+@interface PlannerViewController : BaseVC
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class UIScene;
 
@@ -516,6 +540,7 @@ SWIFT_CLASS("_TtC5VEApp28TruckSubDetailViewController")
 
 SWIFT_CLASS("_TtC5VEApp28TruckSubDetailsTableViewCell")
 @interface TruckSubDetailsTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblLeftText;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified truckSubDetailsView;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified leftLabelView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified registrationLabel;

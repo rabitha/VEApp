@@ -1,0 +1,18 @@
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/TruckInDepthTableViewCell.swift":
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/TruckInDepthTableViewCell.dia"
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/TruckInDepthTableViewCell.swiftdeps"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/TruckInDepthTableViewCell.swiftconstvalues"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/TruckInDepthTableViewCell.d"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/TruckInDepthTableViewCell.o"
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/SearchViewTableViewCell.swift":
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/SearchViewTableViewCell.swiftconstvalues"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/SearchViewTableViewCell.dia"
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/SearchViewTableViewCell.swiftdeps"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/SearchViewTableViewCell.d"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/SearchViewTableViewCell.o"
+"/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/views/StatusViewTableViewCell.swift":
+  swift-dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/StatusViewTableViewCell.swiftdeps"
+  dependencies: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/StatusViewTableViewCell.d"
+  object: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/StatusViewTableViewCell.o"
+  const-values: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/StatusViewTableViewCell.swiftconstvalues"
+  diagnostics: "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphonesimulator/VEApp.build/Objects-normal/x86_64/StatusViewTableViewCell.dia"

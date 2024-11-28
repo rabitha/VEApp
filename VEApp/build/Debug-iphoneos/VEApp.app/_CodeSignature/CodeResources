@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		HmdWdRCdQDcBs4etsjWcpXA30+g=
+		z3b/QQgL9Vmcj5R0q0lyMfu9/VM=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -24,17 +24,33 @@
 		<data>
 		3P9trij6pkFiHiEziYpfckGZGmk=
 		</data>
+		<key>Base.lproj/Main.storyboardc/CustomTabBarController.nib</key>
+		<data>
+		wZKOty4x3Hz8A2tU1JXU9Kg6Fpw=
+		</data>
+		<key>Base.lproj/Main.storyboardc/HomeViewController.nib</key>
+		<data>
+		QHiB9DSLpBp0cxwWqaql608Lojo=
+		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		ba06gAc4UmVZ8JDOg/GgsKQPK5Q=
+		xYayw8irE4qZX9RqO4pYEqeN7n8=
 		</data>
 		<key>Base.lproj/Main.storyboardc/K4g-QQ-QOx-view-VHu-53-iYd.nib</key>
 		<data>
-		M6It4kLs1AQoYc7HORT9nkDJD00=
+		BD8MU7cb/Up7lMAuWjzDdeNBUnQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/LSo-h8-qal-view-OmV-0h-kPx.nib</key>
 		<data>
 		DPY7HUTIdPlfaxWMV0lBzhxMGEE=
+		</data>
+		<key>Base.lproj/Main.storyboardc/MoreViewController.nib</key>
+		<data>
+		Uc6MtIsWOKt/6Tnojcb7nru35Ow=
+		</data>
+		<key>Base.lproj/Main.storyboardc/PlannerViewController.nib</key>
+		<data>
+		s7GgSmdQ/bOCgQ76zzyZn4yXFC8=
 		</data>
 		<key>Base.lproj/Main.storyboardc/TruckInDepthDetailViewController.nib</key>
 		<data>
@@ -48,17 +64,13 @@
 		<data>
 		Yj5lf+HN4/Le94rsO9XP9bgunxY=
 		</data>
-		<key>Base.lproj/Main.storyboardc/UITabBarController-MaS-PX-R6P.nib</key>
-		<data>
-		yT2jYvBWo0jYjUoyVTQzyEJs0HA=
-		</data>
 		<key>Base.lproj/Main.storyboardc/aVz-Sh-RHj-view-fJc-Uj-BbZ.nib</key>
 		<data>
-		qLX/y/qEjr1JBzLk0vv4L/qLses=
+		GKeO7i9Ko5UwZ0UrkiSi+19azd4=
 		</data>
 		<key>Base.lproj/Main.storyboardc/dT6-mL-UZW-view-RD7-df-3iN.nib</key>
 		<data>
-		qLX/y/qEjr1JBzLk0vv4L/qLses=
+		GKeO7i9Ko5UwZ0UrkiSi+19azd4=
 		</data>
 		<key>Base.lproj/Main.storyboardc/yaq-gn-6Vu-view-lqV-Fh-0KB.nib</key>
 		<data>
@@ -66,7 +78,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Yu3k6Y4bh7WL2jRXEsU2GanKxQE=
+		o4cfieQUikzh0l9ElJIv6w9uogQ=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -86,7 +98,7 @@
 		</data>
 		<key>TruckSubDetailsTableViewCell.nib</key>
 		<data>
-		QAqTZrcwT/MT1KKrjlpkzdakAGU=
+		Cw7YQjdRbK0esk7OWtZP+O5gAYE=
 		</data>
 		<key>TruckTableViewCell.nib</key>
 		<data>
@@ -94,11 +106,11 @@
 		</data>
 		<key>VEApp.debug.dylib</key>
 		<data>
-		LthGgaBDVzsF1wkV3Tm6bPZZgSQ=
+		KRPIkEq6oPwLAxsiW1uG16YD61o=
 		</data>
 		<key>__preview.dylib</key>
 		<data>
-		H4hOgGro0EiZ9mHTdgreEs0pfJo=
+		+sYJCBuWlBe+pK0rj7EJ7RwyMRY=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -111,7 +123,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3MWia7D0uB6TyBdCUgrknnbXQWeLrLP5nm6d6UW8kKk=
+			q7oNbQOqp+RtuY1cR87MICjGlfviqUYgvwSgP3AS6RA=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -142,18 +154,32 @@
 			eJjiJauYRs4Lycw8adpBiTYSpL+wrefvTYSe7S/jvJA=
 			</data>
 		</dict>
+		<key>Base.lproj/Main.storyboardc/CustomTabBarController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VlOZJiBL9II1GJ/SHFl2EHvRIoP4QwOnxXuCN01umHM=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/HomeViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N2i0AYPFx+ivQBw1d0Neue+OI5QxNxeN2tfvb8+39Fo=
+			</data>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yWgex2rqEta0rJQuGtu7+Ymo7VSrMnPZrAAQagcIA+s=
+			2gk79i6qA1amqecxFBrrzg8cifB9cEX/xo6Gi4FD6f4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/K4g-QQ-QOx-view-VHu-53-iYd.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sRNknMyk8eRT0WkVc3qFrQ/8DE5uW/C5Hh/csXUic+4=
+			e/RV+MW1q9eCzVmhI7hNSvDzAbmwbnf7XlRJlxspSTs=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/LSo-h8-qal-view-OmV-0h-kPx.nib</key>
@@ -161,6 +187,20 @@
 			<key>hash2</key>
 			<data>
 			Ia0w9+ZM71ZBCig4KSCru8TS+xkRjZl+YauLfHjOSXk=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/MoreViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			T7cnAG5dEhayWzdJy1Cquzfy0y/IZF9EhK+qVledyjs=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/PlannerViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DQVd2UNJhhIkV6qaP6C1LHAQXlZWAM+zMkvn+1mw2N0=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/TruckInDepthDetailViewController.nib</key>
@@ -184,25 +224,18 @@
 			wVeVJf+M1QZUpNQloEgUZ/gwlJ5OwkWelP4Eo0paZLk=
 			</data>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/UITabBarController-MaS-PX-R6P.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			watCoqx/jSL86iRlVZvXksCfTJOLHVtO+5Z3+64ICFo=
-			</data>
-		</dict>
 		<key>Base.lproj/Main.storyboardc/aVz-Sh-RHj-view-fJc-Uj-BbZ.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nsijPZpBuwV9GStN+khX14XHNoEEGJ7BaWxSrrmrmVQ=
+			l/HIiVIM2vVg3Fkoi2XrWtHvXypn3fNrIzrZs45Gwn0=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/dT6-mL-UZW-view-RD7-df-3iN.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nsijPZpBuwV9GStN+khX14XHNoEEGJ7BaWxSrrmrmVQ=
+			l/HIiVIM2vVg3Fkoi2XrWtHvXypn3fNrIzrZs45Gwn0=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/yaq-gn-6Vu-view-lqV-Fh-0KB.nib</key>
@@ -237,7 +270,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SKPvjujQBjDKrSCUCiKCjoz/xxecky+QsMKru8nL8e4=
+			WFalPZS8iJOKE6d8P4UMkPGHUuOW0hxOISj60tiEfjU=
 			</data>
 		</dict>
 		<key>TruckTableViewCell.nib</key>
@@ -251,14 +284,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7ON6oDIDGZgvzVhI9tom64WW2aP04gRy/Ui8xsKXEAU=
+			fk90cHh2TfHl7U+V+WXCryjzOrP6AQG3M7I69G6yohY=
 			</data>
 		</dict>
 		<key>__preview.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ibyc1gMFGtJwHOGIjwIgtKYvu5hRH8sWTB2DnWfRZzY=
+			GVzOekKF8fiT+Wh8EC2Kcjjk1vkA2h+2kIqRH5bsvwE=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>

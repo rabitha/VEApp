@@ -10,6 +10,7 @@ import UIKit
 
 class TruckInDepthDetailViewController: BaseVC,UITableViewDataSource,UITableViewDelegate {
     var truck: Truck?
+    var trucks: [Truck] = []
     @IBOutlet weak var tblviewInDepthDetails: UITableView!
     
     @IBOutlet weak var registrationLabel: UILabel!
@@ -37,22 +38,6 @@ class TruckInDepthDetailViewController: BaseVC,UITableViewDataSource,UITableView
         tblviewInDepthDetails.rowHeight = UITableView.automaticDimension
         tblviewInDepthDetails.estimatedRowHeight = 80
         tblviewInDepthDetails.separatorStyle = .none
-        if let truck = truck {
-            print("TruckInDepthDetailViewController")
-            print(truck)
-            /*registrationLabel.text = truck.registrationNumber
-            distanceToServiceLabel.text = "Distance to Service: \(truck.distanceToService)"
-            hoursToServiceLabel.text = "Hours to Service: \(truck.hoursToService)"
-            tripFuelEfficiencyLabel.text = "Trip Fuel Efficiency: \(truck.tripFuelEfficiency)"
-            engineTemperatureLabel.text = "Engine Temperature: \(truck.engineTemperature)"
-            outsideTemperatureLabel.text = "Outside Temperature: \(truck.outsideTemperature)"
-            issuesLabel.text = "Issues: \(truck.issues.joined(separator: ", "))"
-            faultsLabel.text = "Faults: \(truck.faults.joined(separator: ", "))"
-            driverNameLabel.text = "Driver: \(truck.driverName)"
-            driverIdLabel.text = "Driver ID: \(truck.driverId)"
-            driverPhoneLabel.text = "Phone: \(truck.driverPhone)"
-            licenseNumberLabel.text = "License: \(truck.licenseNumber)"*/
-        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -83,6 +68,10 @@ class TruckInDepthDetailViewController: BaseVC,UITableViewDataSource,UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: "StatusViewTableViewCell", for: indexPath) as! StatusViewTableViewCell
+            cell.runningStatus = getCountByStatus(status: "Running",trucks: trucks)
+            cell.idleStatus = getCountByStatus(status: "idle",trucks: trucks)
+            cell.stoppedStatus = getCountByStatus(status: "halt",trucks: trucks)
+            cell.offlineStatus = getCountByStatus(status: "offline",trucks: trucks)
             return cell
         }else if indexPath.section == 1{
             let cell = tableView.dequeueReusableCell(withIdentifier: "SearchViewTableViewCell", for: indexPath) as! SearchViewTableViewCell

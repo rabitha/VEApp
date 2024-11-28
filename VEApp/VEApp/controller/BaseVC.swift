@@ -87,5 +87,14 @@ class BaseVC: UIViewController{
                 notificationButton.trailingAnchor.constraint(equalTo: navBar.trailingAnchor, constant: -16),
                 notificationButton.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor)
             ])
-        }        
+        }
+    
+    func getCountByStatus(status:String,trucks:[Truck])->Int{
+        // Filter non-nil trucks with status
+        let runningTrucks = trucks.compactMap { $0 }.filter { $0.status == status }
+        // Get the count of trucks
+        let runningTruckCount = runningTrucks.count
+        return runningTruckCount
+    }
+       
     }
