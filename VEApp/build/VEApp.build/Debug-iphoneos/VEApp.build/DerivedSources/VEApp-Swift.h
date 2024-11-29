@@ -458,6 +458,7 @@ SWIFT_CLASS("_TtC5VEApp25TruckInDepthTableViewCell")
 @interface TruckInDepthTableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified truckInDepthDetailsView;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified leftLabelView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lftLblText;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified registrationLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified bottomLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified statusLabelImg;

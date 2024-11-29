@@ -16,7 +16,8 @@ class TruckInDepthTableViewCell: UITableViewCell {
     var circularPath2: UIBezierPath!
     
     @IBOutlet weak var truckInDepthDetailsView: UIView!
-    @IBOutlet weak var leftLabelView: UIView!
+    @IBOutlet weak var leftLabelView: UIView!    
+    @IBOutlet weak var lftLblText: UILabel!
     @IBOutlet weak var registrationLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!
     @IBOutlet weak var statusLabelImg: UIImageView!
@@ -77,6 +78,15 @@ class TruckInDepthTableViewCell: UITableViewCell {
         
         let truckStatusColor = commonMethods().passStatusGetColor(st: truck.status)
         leftLabelView.backgroundColor = UIColor(named: truckStatusColor)
+        
+        lftLblText.text = "Major Issues"
+        // Calculate text size and update constraints dynamically
+        let textSize = lftLblText.text?.size(withAttributes: [.font: lftLblText.font!]) ?? .zero
+        print("textSize = ",textSize)
+        lftLblText.widthAnchor.constraint(equalToConstant: textSize.height).isActive = true
+        lftLblText.heightAnchor.constraint(equalToConstant: textSize.width).isActive = true
+        lftLblText.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2) // Rotate counterclockwise
+        lftLblText.textColor = .blue //UIColor(red: 250.0, green: 110.0, blue: 243.0, alpha: 1.0)
         
         // Set labels for additional details
         bottomLabel.text = truck.registrationNumber

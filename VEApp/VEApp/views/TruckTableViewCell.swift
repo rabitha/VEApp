@@ -26,7 +26,6 @@ class TruckTableViewCell: UITableViewCell {
         let imgName = commonMethods().passStatusGetImgName(st: truck.status)
         statusLabelImg.image =  UIImage(named: imgName)
         let truckStatusColor = commonMethods().passStatusGetColor(st: truck.status)
-        print("truckStatusColor: \(truckStatusColor)")
         leftLabelView.backgroundColor = UIColor(named: truckStatusColor)
         bottomLabel.text = truck.registrationNumber
      }      

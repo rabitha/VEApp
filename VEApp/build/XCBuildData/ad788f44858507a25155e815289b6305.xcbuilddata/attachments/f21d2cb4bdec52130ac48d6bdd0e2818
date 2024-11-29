@@ -105,16 +105,6 @@
     "swift-dependencies" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckListViewController.swiftdeps",
     "swiftmodule" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckListViewController~partial.swiftmodule"
   },
-  "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/TruckSubDetailsTableViewCellDelegate.swift" : {
-    "const-values" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCellDelegate.swiftconstvalues",
-    "dependencies" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCellDelegate.d",
-    "diagnostics" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCellDelegate.dia",
-    "index-unit-output-path" : "/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCellDelegate.o",
-    "llvm-bc" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCellDelegate.bc",
-    "object" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCellDelegate.o",
-    "swift-dependencies" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCellDelegate.swiftdeps",
-    "swiftmodule" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailsTableViewCellDelegate~partial.swiftmodule"
-  },
   "/Users/rabitha_n/Desktop/VEApp/VEApp/VEApp/controller/TruckSubDetailViewController.swift" : {
     "const-values" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailViewController.swiftconstvalues",
     "dependencies" : "/Users/rabitha_n/Desktop/VEApp/VEApp/build/VEApp.build/Debug-iphoneos/VEApp.build/Objects-normal/arm64/TruckSubDetailViewController.d",
